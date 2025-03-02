@@ -12,12 +12,12 @@
       POSTGRES_DB: postgres
       POSTGRES_PASSWORD: postgres
 
-  mariadb:
-    image: mariadb:lts
+  mysql:
+    image: mysql:8.4
     restart: unless-stopped
     volumes:
-      - ./tmp/mariadb:/var/lib/mysql
+      - ./tmp/mysql:/var/lib/mysql
     ports:
       - "6666:3306"
     environment:
-      MARIADB_ROOT_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: root

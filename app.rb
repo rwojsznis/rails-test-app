@@ -1,5 +1,6 @@
 require 'rails'
 require 'active_record/railtie'
+require 'pgreset'
 
 class AppUnderTest < Rails::Application
   config.load_defaults 8.0

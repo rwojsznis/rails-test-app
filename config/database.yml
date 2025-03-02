@@ -17,3 +17,5 @@ development:
     adapter: mysql2
     username: root
     password: root
+    migrations_paths: db/cars_migrate
+    schema_migrations_path: db/cars-custom-schema-migrate-dir
