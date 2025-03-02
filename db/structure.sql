@@ -104,6 +104,7 @@ ALTER TABLE ONLY public.test
 SET search_path TO "$user", public;
 
 INSERT INTO "schema_migrations" (version) VALUES
+('2021050100000'),
 ('2021030100000'),
 ('2021020100000'),
 ('2021010100000');
