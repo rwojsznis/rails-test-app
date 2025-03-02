@@ -1,0 +1,23 @@
+ services:
+  postgres:
+    image: postgres:17
+    restart: unless-stopped
+    volumes:
+      - ./tmp/postgres:/var/lib/postgresql/data
+    ports:
+      - "5555:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_ROOT_PASSWORD: postgres
+      POSTGRES_DB: postgres
+      POSTGRES_PASSWORD: postgres
+
+  mariadb:
+    image: mariadb:lts
+    restart: unless-stopped
+    volumes:
+      - ./tmp/mariadb:/var/lib/mysql
+    ports:
+      - "6666:3306"
+    environment:
+      MARIADB_ROOT_PASSWORD: root

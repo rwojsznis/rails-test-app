@@ -1,0 +1,19 @@
+development:
+  primary:
+    adapter: postgresql
+    host: localhost
+    port: 5555
+    username: postgres
+    password: postgres
+    database: rails-app
+  animals:
+    adapter: sqlite3
+    database: tmp/sqlite/development.sqlite3
+    migrations_paths: db/animals_migrate
+  cars:
+    database: cars_database
+    host: 127.0.0.1
+    port: 6666
+    adapter: mysql2
+    username: root
+    password: root
